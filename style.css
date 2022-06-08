@@ -1,0 +1,191 @@
+body {
+  background-color: grey;
+}
+/* Begin Button */
+.startBtn button {
+  background-color: bisque;
+  font-size: 32px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+.startBtn button:hover {
+  background-color: aliceblue;
+}
+
+/* Rule Container */
+.infoBox {
+  background: white;
+  height: 20rem;
+  width: 40rem;
+  margin-top: 1%;
+  margin-left: 0%;
+  top: 25%;
+  left: 25%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.infoBox.liveInformation, .fix.liveResult  {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.infoTitle {
+  align-items: center;
+  font-size: 14px;
+  margin-left: 11rem;
+  height:40px;
+  width: 500px;
+}
+
+.infoPara {
+  padding: 10px 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.mainBtn {
+  height: 80px;
+  width: 500px;
+  margin-left: 9rem;
+}
+
+.mainBtn button {
+  margin: 10px;
+  height: 60px;
+  width: 150px;
+  font-size: 18px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+/* Quiz Container */
+.mainContainer {
+  margin-left: 25%;
+  width: 600px;
+  background: aliceblue;
+  opacity: 0;
+  position: absolute;
+}
+
+.mainContainer section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin: 0px 20px;
+  background: aliceblue;
+}
+
+.mainContainer.outputQuiz {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.mainHeader {
+  font-size: 30px;
+}
+
+/* Quiz Options */
+.mainTimer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 160px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.timeStart {
+  text-align: center;
+  background-color: grey;
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  line-height: 150%;
+}
+
+.timeBar {
+  position: absolute;
+}
+
+.choiceMain {
+  padding: 25px;
+  background: aliceblue;
+}
+
+.input {
+  font-size: 28px;
+}
+
+/* Option Choices */
+.decisions {
+  margin: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.decisions .option:hover {
+  background: white;
+}
+
+.decisions .option.correct {
+  color: rgb(0, 137, 0);
+  background: rgb(189, 239, 255);
+}
+
+.decisions .option.incorrect {
+  color: rgb(169, 0, 0);
+  background: rgb(255, 183, 183);
+}
+
+/* Quiz Footer */
+footer {
+  margin: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .inputDisplay span {
+  user-select: none;
+  display: flex;
+}
+
+footer .inputDisplay span p {
+  margin: 0px 6px 0px 6px;
+}
+
+footer button {
+  height: 60px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: bisque;
+  opacity: 0;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: grey;
+}
+footer button.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Result Container*/ 
+.fix .mainBtn button {
+  opacity: 0;
+}
